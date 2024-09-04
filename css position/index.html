@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+    <style>
+      /* Position Static */
+      .static-box {
+        position: static;
+        background-color: lightblue;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+
+      /* Position Relative */
+      .relative-box {
+        position: relative;
+        top: 20px;
+        left: 20px;
+        background-color: lightcoral;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+
+      /* Position Absolute */
+      .absolute-container {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        background-color: lightgreen;
+        margin-bottom: 10px;
+      }
+
+      .absolute-box {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+      }
+
+      /* Position Fixed */
+      .fixed-box {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: lightsalmon;
+      }
+
+      /* Position Sticky */
+      .sticky-container {
+        height: 200px;
+        overflow: auto;
+        background-color: #f4f4f4;
+        padding: 10px;
+      }
+
+      .sticky-box {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        background-color: lightpink;
+        padding: 10px;
+      }
+
+      .content {
+        height: 500px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Position</h1>
+
+    <!-- Contoh Position Static -->
+    <div class="static-box">Ini adalah elemen dengan posisi static.</div>
+
+    <!-- Contoh Position Relative -->
+    <div class="relative-box">Ini adalah elemen dengan posisi relative.</div>
+
+    <!-- Contoh Position Absolute -->
+    <div class="absolute-container">
+      <div class="absolute-box">Absolute</div>
+      Ini adalah container dengan posisi relative yang memiliki elemen posisi
+      absolute.
+    </div>
+
+    <!-- Contoh Position Fixed -->
+    <div class="fixed-box">Fixed Box</div>
+
+    <!-- Contoh Position Sticky -->
+    <div class="sticky-container">
+      <div class="sticky-box">Sticky Header</div>
+      <div class="content">
+        Scroll ke bawah untuk melihat efek sticky pada header ini.
+      </div>
+    </div>
+  </body>
+</html>
